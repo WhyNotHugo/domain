@@ -141,6 +141,7 @@ impl StubResolver {
         search_host(&self, qname).await
     }
 
+    /// See the documentation for the [`lookup_srv`] function for details.
     pub async fn lookup_srv(
         &self,
         service: impl ToRelativeDname,
